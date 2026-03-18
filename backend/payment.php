@@ -8,8 +8,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') { http_response_code(200); exit; }
 
 require_once 'db.php';
 
-define('RAZORPAY_KEY_ID',     'rzp_test_REPLACE_WITH_YOUR_KEY');
-define('RAZORPAY_KEY_SECRET', 'REPLACE_WITH_YOUR_SECRET');
+define('RAZORPAY_KEY_ID',     'rzp_test_SSXe5CloBVKPtA');
+define('RAZORPAY_KEY_SECRET', 'CTX0wNVY92ja4JsQG33dOKBO');
 
 $conn = getDbConnection();
 $raw  = json_decode(file_get_contents('php://input'), true);
