@@ -50,14 +50,14 @@ export const Header = ({ selectedCity, onCityChange, searchQuery, onSearchChange
               <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-muted-foreground" />
               <input
                 type="text"
-                placeholder="Search events, movies, shows..."
+                placeholder="Search events, movies, shows..." aria-label="Search events"
                 value={searchQuery}
                 onChange={(e) => onSearchChange(e.target.value)}
                 className="w-full h-11 pl-12 pr-4 bg-muted rounded-xl border-0 focus:ring-2 focus:ring-primary/20 text-foreground placeholder:text-muted-foreground outline-none transition-all"
               />
             </div>
             <Select value={selectedCity} onValueChange={onCityChange}>
-              <SelectTrigger className="w-40 h-11 bg-muted border-0 rounded-xl">
+              <SelectTrigger className="w-40 h-11 bg-muted border-0 rounded-xl" aria-label="Select city">
                 <MapPin className="w-4 h-4 mr-2 text-primary" />
                 <SelectValue placeholder="Select city" />
               </SelectTrigger>
@@ -131,7 +131,7 @@ export const Header = ({ selectedCity, onCityChange, searchQuery, onSearchChange
               <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-muted-foreground" />
               <input
                 type="text"
-                placeholder="Search events..."
+                placeholder="Search events..." aria-label="Search events"
                 value={searchQuery}
                 onChange={(e) => onSearchChange(e.target.value)}
                 className="w-full h-12 pl-12 pr-4 bg-muted rounded-xl border-0 focus:ring-2 focus:ring-primary/20 text-foreground placeholder:text-muted-foreground outline-none"

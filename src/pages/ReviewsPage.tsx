@@ -85,7 +85,7 @@ const ReviewsPage = () => {
                       <img
                         src={event.image}
                         alt={event.title}
-                        className="w-16 h-20 rounded-lg object-cover flex-shrink-0"
+                        className="w-16 h-20 rounded-lg object-cover flex-shrink-0" loading="lazy"
                       />
                       <div className="flex-1 min-w-0">
                         <p className="font-semibold text-foreground text-sm line-clamp-2 group-hover:text-primary transition-colors">
@@ -117,7 +117,7 @@ const ReviewsPage = () => {
                     <img
                       src={selectedEventData.image}
                       alt={selectedEventData.title}
-                      className="w-14 h-18 rounded-lg object-cover flex-shrink-0"
+                      className="w-14 h-18 rounded-lg object-cover flex-shrink-0" loading="lazy"
                     />
                     <div>
                       <h3 className="font-display font-bold text-foreground">

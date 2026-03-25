@@ -48,7 +48,7 @@ export const HeroBanner = ({ onExplore }: HeroBannerProps) => {
             </span>
           </h1>
 
-          <p className="text-white/60 text-lg md:text-xl mb-10 max-w-xl leading-relaxed">
+          <p className="text-white/80 text-lg md:text-xl mb-10 max-w-xl leading-relaxed">
             Discover movies, concerts, sports, and more. Find your perfect companion
             to share unforgettable moments.
           </p>
@@ -80,7 +80,7 @@ export const HeroBanner = ({ onExplore }: HeroBannerProps) => {
                   <Icon className="w-5 h-5 text-accent group-hover:scale-125 transition-transform duration-300" />
                 </div>
                 <div className="text-2xl font-bold text-white">{value}</div>
-                <div className="text-white/40 text-xs mt-0.5">{label}</div>
+                <div className="text-white/70 text-xs mt-0.5">{label}</div>
               </div>
             ))}
           </div>

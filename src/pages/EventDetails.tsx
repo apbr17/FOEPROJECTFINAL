@@ -15,7 +15,7 @@ export const EventDetails = ({ event, onBack, onBookNow }: EventDetailsProps) =>
     <div className="min-h-screen bg-background animate-fade-in pb-24 md:pb-0">
       {/* Hero */}
       <div className="relative h-[50vh] md:h-[60vh] overflow-hidden">
-        <img src={event.image} alt={event.title} className="w-full h-full object-cover" />
+        <img src={event.image} alt={event.title} className="w-full h-full object-cover" loading="eager" />
         <div className="absolute inset-0 bg-gradient-to-t from-background via-background/50 to-transparent" />
 
         <button

@@ -39,6 +39,9 @@ export const EventCard = ({ event, onClick }: EventCardProps) => {
           src={event.image}
           alt={event.title}
           className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+          loading="lazy"
+          width={300}
+          height={400}
         />
 
         {/* Gradient overlay — intensifies on hover */}
@@ -71,9 +74,9 @@ export const EventCard = ({ event, onClick }: EventCardProps) => {
           <h3 className="text-white font-display text-lg font-semibold mb-1 line-clamp-2 drop-shadow-lg">
             {event.title}
           </h3>
-          {event.genre && <p className="text-white/60 text-sm mb-2">{event.genre}</p>}
+          {event.genre && <p className="text-white/80 text-sm mb-2">{event.genre}</p>}
           {event.language && (
-            <Badge variant="outline" className="text-white/80 border-white/30 text-xs backdrop-blur-sm">
+            <Badge variant="outline" className="text-white border-white/40 text-xs backdrop-blur-sm">
               {event.language}
             </Badge>
           )}
