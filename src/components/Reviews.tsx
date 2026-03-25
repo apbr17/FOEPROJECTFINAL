@@ -90,7 +90,14 @@ export const Reviews = ({ targetType, targetId, eventTitle }: ReviewsProps) => {
     }
   };
 
-  useEffect(() => { fetchReviews(); }, [targetType, targetId]);
+  useEffect(() => {
+    // Defer fetch until after page is interactive to avoid blocking LCP
+    if (typeof requestIdleCallback !== "undefined") {
+      requestIdleCallback(() => fetchReviews());
+    } else {
+      setTimeout(() => fetchReviews(), 500);
+    }
+  }, [targetType, targetId]);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
